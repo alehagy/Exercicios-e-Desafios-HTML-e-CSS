@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url("imagens/wallpaper002.jpg");
-            background-position: center center;
+            background-position: center center;*/
             /* repeat - tira a repeticao de imagens*/
-            background-repeat: no-repeat;
+            /*background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+            /*shorhand-background
+                color> image > position > repeat > [size] > attachment
+            */
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
             background-size: cover;
         }
         main {
             background-color: white;
-            width: 400px;
+            max-width: 700px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,7 +34,7 @@
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati aliquam a enim velit recusandae aliquid, qui harum ipsa voluptates. Ipsam, optio? Minima, repellendus! Nobis perferendis at dolore inventore voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam quia magnam ea, porro esse unde modi harum amet cum maxime illo, placeat explicabo, deleniti ipsa eveniet odit reprehenderit nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet saepe similique, nobis at temporibus sapiente sint magnam, harum neque doloribus veritatis corporis corrupti nisi praesentium fuga officiis. Iusto, reprehenderit iste.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati aliquam a enim velit recusandae aliquid, qui harum ipsa voluptates. Ipsam, optio? Minima, repellendus! Nobis perferendis at dolore inventore voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam quia magnam ea, porro esse unde modi harum amet cum maxime illo, placeat explicabo, deleniti ipsa eveniet odit reprehenderit nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet saepe similique, nobis at temporibus sapiente sint magnam, harum neque doloribus veritatis corporis corrupti nisi praesentium fuga officiis. Iusto, reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati aliquam a enim velit recusandae aliquid, qui harum ipsa voluptates. Ipsam, optio? Minima, repellendus! Nobis perferendis at dolore inventore voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam quia magnam ea, porro esse unde modi harum amet cum maxime illo, placeat explicabo, deleniti ipsa eveniet odit reprehenderit nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet saepe similique, nobis at temporibus sapiente sint magnam, harum neque doloribus veritatis corporis corrupti nisi praesentium fuga officiis. Iusto, reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati aliquam a enim velit recusandae aliquid, qui harum ipsa voluptates. Ipsam, optio? Minima, repellendus! Nobis perferendis at dolore inventore voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam quia magnam ea, porro esse unde modi harum amet cum maxime illo, placeat explicabo, deleniti ipsa eveniet odit reprehenderit nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet saepe similique, nobis at temporibus sapiente sint magnam, harum neque doloribus veritatis corporis corrupti nisi praesentium fuga officiis. Iusto, reprehenderit iste. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam obcaecati aliquam a enim velit recusandae aliquid, qui harum ipsa voluptates. Ipsam, optio? Minima, repellendus! Nobis perferendis at dolore inventore voluptate. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam ullam quia magnam ea, porro esse unde modi harum amet cum maxime illo, placeat explicabo, deleniti ipsa eveniet odit reprehenderit nemo! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet saepe similique, nobis at temporibus sapiente sint magnam, harum neque doloribus veritatis corporis corrupti nisi praesentium fuga officiis. Iusto, reprehenderit iste.
         </p>
     </main>
 </body>
