@@ -6,29 +6,222 @@
     <title>Projeto Netuno 2</title>
     <link rel="stylesheet" href="estilo/style.css">
     <style>
-        
+        nav {
+            background-color: #1A7FBD;
+            padding: 3px;
+            /*box-shadow: 1px 1px 1px black;*/
+            /*deslocament horizontal, deslocamento vertical e espalhamento*/
+
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+
+        }
+
+        h1 {
+            background-color: #1A7FBD;
+            font-size: 50px;
+            color: #9ccfee;
+            width: 300px;
+            border: 1px solid darkgreen;
+
+            padding: 10px 20px;
+
+            margin-top: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 800px;
+            outline-width: 5px;
+        }
+
+        h1#hed03 {
+            background-color: white;
+        }
+
+        h2 {
+            background-color: white;
+            font-size: 25px;
+            color: black;
+            width: 380px;
+            border: 1px solid darkgreen;
+
+            padding: 10px 20px;
+
+            margin-top: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 800px;
+            outline-width: 5px;
+        }
+
+        h2#hed04 {
+            width: 300px;
+            border-radius: 5px;
+            margin-left: 100px;
+        }
         main {
             background-color: white;
-            max-width: 100px;
-            padding: 10px;
+            /*max-width: 400px;*/
+            /*padding: 10px;*/
             margin: auto;
-            border: 1px solid darkblue;
-            border-radius: 15px;
+            
+        }
+        p {
+            background-color: #1A7FBD;
+            color: white;
+            
+            border: 1px solid darkgreen;
+
+            padding: 10px 20px;
+
+            margin-top: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            outline-width: 5px;
+        }
+        p#par01 {
+            mbackground-color: #1A7FBD;
+            color: white;
+            height: 250px;
+            width: 300px;
+            border: 1px solid darkgreen;
+
+            padding: 10px 20px;
+
+            margin-top: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 800px;
+            outline-width: 5px;
+        }
+        p#par03 {
+            background-color: white;
+            color: black;
+            height: 140px;
+            width: 370px;
+            margin-left: 800px;
+            height: 180px;
+            width: 300px;
+        }
+        p#par04 {
+            background-color: white;
+            color: black;
+            height: 80px;
+            width: 300px;
+            border-radius: 5px;
+            margin-left: 100px;
+        }
+
+
+        section.image {
+            background-color: #1A7FBD;
+            color: white;
+            /*box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.479);*/
+            /*background-size: cover;*/
+            
+        }
+        section#img01 {
+                /*background-image: url(../imagens/background001.jpg);
+                background-position: right center; /imagens/bannertopo.png*/
+                
+                height: 100vh;
+                width: 100vw;
+                background-image: url(imagens/bannertopo.png);
+        }
+        section#img02 {
+                background-color: #1A7FBD;              
+                height: 100vh;
+                width: 100vw;
+                background-image: url(imagens/dev.png);
+        }
+
+        section#img03 {
+                background-color: white;              
+                height: 100vh;
+                width: 100vw;
+                background-image: url(imagens/Container2.png);
+                      
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4%;
+            margin: 0px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <nav> 
+            <a href="#">O Projeto</a>
+            <a href="#">O Problema</a>
+            <a href="#">Sua Jornada</a>
+            <a href="#">Objetivos</a>
+            
+        </nav>
+    </header>
     <main>
-        <section>
-            /*insercao da primeira imagem*/
-            height: 100%;
-            background: black url("imagens/bannertopo.png") center center no-repeat fixed;
-            background-size: cover;
+        
+        <section class="image" id="img01">
+           
         </section>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde molestiae esse repellat enim expedita. Quas fuga, alias perferendis nulla voluptatum at accusantium quod, et cumque, autem fugit non obcaecati vero!
-            </p>
-    </main>
 
+        <section class="image" id="img02">
+            <h1>O Projeto</h1>
+            <article>
+                <p class="paragraf" id="par01">
+                    Com o “novo normal” causado pela pandemia dos últimos anos, mais empresas no mundo todo tem aberto oportunidades no modelo Home Office. Alinhado a depreciação da moeda local, temos um alto índice de profissionais migrado para trabalho em outros países. <br> <br> <strong>O projeto Netuno, idealizado pela Fasters, tem por objetivo reduzir os estresses causados por recrutamento e turn over na área de tecnologia, bem como gerar oportunidade de carreira para novos profissionais.</strong>
+                </p>
+                
+            </article>
+            
+        </section >
+            
+        <section class="image" id="img03">
+            
+            <article>
+                <h1 class="header" id="hed03">O Problema</h1>
+                <h2>Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.</h2>
+                <p class="paragraf" id="par03">
+                    Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na faixa de R$ 167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI. <br> <br>
+                
+                    <strong>Um dos principais fatores dessa falta de profissionais e o êxodo de profissionais para o exterior.</strong>
+                    
+                </p>
+            </article>
+
+            <article>
+                <h2 class="header" id="hed04">Oportunidade</h2>
+                    <p class="paragraf" id="par04">
+                        Acreditamos que a combinação de interesse e dedicação e oportunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo.
+                    </p>
+            </article>
+            <article>
+                <h2 class="header" id="hed04">Comunidade</h2>
+                    <p class="paragraf" id="par04">
+                        Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluida e eficiente.
+                    </p>
+            </article>
+            <article>
+                <h2 class="header" id="hed04">Experiencia Real</h2>
+                    <p class="paragraf" id="par04">
+                        Entendemos que somente as experiencias reais poderão trazer a bagagem que a teoria não o pode fazer.
+                    </p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo cursoemvideo</p>
+    </footer>
 </body>
 </html>
