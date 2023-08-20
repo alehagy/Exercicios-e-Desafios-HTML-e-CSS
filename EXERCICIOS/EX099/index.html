@@ -47,6 +47,11 @@
             outline-width: 5px;
         }
 
+        h1#hed01 {
+            background-color: white;
+            color: rgb(206, 204, 204);
+        }
+
         h1#hed03 {
             background-color: white;
         }
@@ -102,6 +107,26 @@
             margin-left: 10px;
             outline-width: 5px;
         }
+        p#par00 {
+            background-color: white;
+            color: #1A7FBD;
+            width: 300px;
+            margin-left: 800px;
+        }
+        p#par10 {
+            background-color: #1A7FBD;
+            color: white;
+            height: 10px;
+            width: 300px;
+            margin-left: 800px;
+        }
+        p#par11 {
+            background-color: white;
+            color: #1A7FBD;
+            height: 10px;
+            width: 300px;
+            margin-left: 800px;
+        }
         p#par01 {
             background-color: #1A7FBD;
             color: white;
@@ -142,8 +167,17 @@
             border-radius: 5px;
             margin-left: 100px;
             display: inline-block;
-        }    
-        
+        }
+
+        div.formulario {
+
+            
+        }
+        div.campo {
+            border: 2 px solid white;
+            margin-left: 800px;
+        }
+
         div.problema {
             display: inline-block;
             margin-left: -40px;
@@ -163,31 +197,48 @@
             
         }
         section#img01 {
-                /*background-image: url(../imagens/background001.jpg);
-                background-position: right center; /imagens/bannertopo.png*/
-                /*imagem alunos*/
-                height: 100vh;
-                width: 100vw;
-                background-image: url(imagens/bannertopo.png);
+    /*background-position: right center; */
+    /*imagem alunos*/
+    
+        height: 180vh;
+        width: 300vw;
+        background-image: url(imagens/bannertopo.png);
+
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba (0, 0, 0, 0.450);
+   
         }
         section#img02 {
                 /*imagem telas/dev*/
                 background-color: #1A7FBD;              
-                height: 100vh;
-                width: 100vw;
+                height: 150vh;
+                width: 92vw;
+
                 background-image: url(imagens/dev.png);
         }
 
         section#img03 {
                 /*imagem mulher*/
                 background-color: #f3f5f7;              
-                height: 100vh;
-                width: 100vw;
+                height: 260vh;
+                width: 90vw;
                 background-image: url(imagens/Container2.png);
                       
         }
         section#img04 {
             background-color: #f3f5f7;    
+        }
+        fieldset#field {
+            background-color: #1A7FBD;;
+            color: white;
+            width: 330px;
+            margin-left: 800px;
+        }
+        fieldset#prog {
+            background-color: white;
+            color: #1A7FBD;
+            width: 330px;
+            margin-left: 800px;
         }
         footer {
             background-color: black;
@@ -213,7 +264,69 @@
     <main>
         
         <section class="image" id="img01">
+            <div id="aluno">
+
+            </div>
            <! --tela form --->
+           <div id="formulario">
+            <h1 id="hed01">Formulário de Cadastro</h1>
+                <p id="par00"><strong>Preencha seus dados</strong></p>
+            <form action="#" method="get" autocomplete="on">
+                <div class="campo">
+                    <span class="material-icons">person</span>
+                    <input type="text" name="name" id="iname" placeholder="Nome completo*" autocomplete="name" required maxlength="30">
+                    <label for="iname"></label>
+                </div>
+                <div class="campo">
+                    <span class="material-icons">mail</span>
+                    <input type="email" name="login" id="ilogin" placeholder="E-mail*" autocomplete="email" required maxlength="30">
+                    <label for="iemail"></label>
+                </div>
+                <div class="campo">
+                    <span class="material-icons">house</span>
+                    <select name="estado" id="iest">
+                        <option value="" selected>Estado*</option>
+                        
+                            <option value="MG">Minas Gerais</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="SP">Sao Paulo</option>                 
+                            <option value="PE">Pernambuco</option>
+                            <option value="BA">Bahia</option>
+                            <option value="SE">Sergipe</option>               
+                    </select>
+                </div>
+                <div>
+                    <p id="par10"><strong>Conhecimento de Programação*</strong></p>
+                    <fieldset id="field">
+                        
+                        <input type="checkbox" name="html" id="ihmtl" checked> <label for="ihtml">HTML</label>
+                        <input type="checkbox" name="css" id="icss"> <label for="icss">CSS</label>
+                        <input type="checkbox" name="javascript" id="ijavascript"> <label for="ijavascript">JavaScript</label>
+                        <input type="checkbox" name="php" id="iphp"> <label for="iphp">PHP</label>
+                        <br>
+
+                        <input type="checkbox" name="net" id="inet"> <label for="inet">.NET</label>
+                        <input type="checkbox" name="vuejs" id="ivuejs"> <label for="ijvuejs">Vue.JS</label>
+                        <input type="checkbox" name="reactjs" id="ireactjsp"> <label for="ireactjs">ReactJs</label>
+                        <input type="checkbox" name="reactnative" id="ireactnative"> <label for="ihtml">React Native</label>
+                        <br>
+                        <input type="checkbox" name="node" id="inode"> <label for="inode">Node</label>
+                        <input type="checkbox" name="python" id="ipython"> <label for="ipython">Python</label>
+                        <input type="checkbox" name="flutter" id="iflutte"> <label for="iflutte">Flutter</label>
+                        <input type="checkbox" name="outras" id="ioutras> <label for="ioutras">Outras</label>
+                    </fieldset>
+                </div>
+                <div>
+                    <p id="par11"><strong>Já trabalhou com desenvolvimento?</strong></p>
+                    <fieldset id="prog">                      
+                        <input type="radio" name="nprog" id="inprog" value="N" checked> <label for="inprog">Não</label><br>
+                        <input type="radio" name="sprog" id="isprog" value="F"> <label for="isprog">Sim</label>
+                    </fieldset>
+                </div>
+            </form>
+
+           </div>
+           
         </section>
 
         <section class="image" id="img02">
