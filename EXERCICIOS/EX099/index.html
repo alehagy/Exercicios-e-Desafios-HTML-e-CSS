@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto Netuno 2</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     <link rel="stylesheet" href="estilo/style.css">
     <style>
         nav {
@@ -32,7 +33,7 @@
 
         h1 {
             background-color: #1A7FBD;
-            font-size: 50px;
+            font-size: 25px;
             color: #9ccfee;
             width: 300px;
             border: 1px solid darkgreen;
@@ -49,27 +50,36 @@
         h1#hed03 {
             background-color: white;
         }
+        h1#hed05 {
+            background-color: #f3f5f7;
+            color: #9ccfee;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+        }
 
         h2 {
             background-color: white;
-            font-size: 25px;
+            font-size: 18px;
             color: black;
-            width: 380px;
+            width: 300px;
             border: 1px solid darkgreen;
 
             padding: 10px 20px;
 
-            margin-top: 5px;
-            margin-right: 10px;
-            margin-bottom: 10px;
+            margin-top: 0px;
+            margin-right: 5px;
+            margin-bottom: 5px;
             margin-left: 800px;
             outline-width: 5px;
         }
 
         h2#hed04 {
-            width: 300px;
+            width: 220px;
             border-radius: 5px;
+            margin-top: 120px;
             margin-left: 100px;
+            display: inline-block;
         }
         main {
             background-color: white;
@@ -86,14 +96,14 @@
 
             padding: 10px 20px;
 
-            margin-top: 5px;
+            margin-top: 0px;
             margin-right: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
             margin-left: 10px;
             outline-width: 5px;
         }
         p#par01 {
-            mbackground-color: #1A7FBD;
+            background-color: #1A7FBD;
             color: white;
             height: 250px;
             width: 300px;
@@ -110,38 +120,58 @@
         p#par03 {
             background-color: white;
             color: black;
-            height: 140px;
-            width: 370px;
             margin-left: 800px;
-            height: 180px;
+            margin-bottom: 0px;
+            height: 150px;
             width: 300px;
         }
         p#par04 {
             background-color: white;
             color: black;
             height: 80px;
+            width: 220px;
+            border-radius: 5px;
+            margin-left: 100px;
+            
+        }
+
+        p#par05 {
+                      
+            height: 50px;
             width: 300px;
             border-radius: 5px;
             margin-left: 100px;
+            display: inline-block;
+        }    
+        
+        div.problema {
+            display: inline-block;
+            margin-left: -40px;
         }
 
+        div.jornada {
+            background-color: #f3f5f7;
+            height: 400px;
+            width: 220px;
+
+        }
 
         section.image {
             background-color: #1A7FBD;
             color: white;
-            /*box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.479);*/
-            /*background-size: cover;*/
+            
             
         }
         section#img01 {
                 /*background-image: url(../imagens/background001.jpg);
                 background-position: right center; /imagens/bannertopo.png*/
-                
+                /*imagem alunos*/
                 height: 100vh;
                 width: 100vw;
                 background-image: url(imagens/bannertopo.png);
         }
         section#img02 {
+                /*imagem telas/dev*/
                 background-color: #1A7FBD;              
                 height: 100vh;
                 width: 100vw;
@@ -149,11 +179,15 @@
         }
 
         section#img03 {
-                background-color: white;              
+                /*imagem mulher*/
+                background-color: #f3f5f7;              
                 height: 100vh;
                 width: 100vw;
                 background-image: url(imagens/Container2.png);
                       
+        }
+        section#img04 {
+            background-color: #f3f5f7;    
         }
         footer {
             background-color: black;
@@ -200,33 +234,62 @@
                 <h1 class="header" id="hed03">O Problema</h1>
                 <h2>Falta de profissionais de TI no Mercado brasileiro: um problema que demanda atenção urgente.</h2>
                 <p class="paragraf" id="par03">
-                    Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na faixa de R$ 167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI. <br> <br>
+                    Estima-se que atualmente tenhamos um déficit de 408 mil postos de trabalho, com perdas se acumulando na faixa de R$ 167 bilhões, de acordo com a Softex, uma organização social voltada ao fomento da área de TI. <br>
                 
                     <strong>Um dos principais fatores dessa falta de profissionais e o êxodo de profissionais para o exterior.</strong>
                 </p>
             </article>
-
-            <article>
+            <div class="problema">
                 <h2 class="header" id="hed04">Oportunidade</h2>
                     <p class="paragraf" id="par04">
                         Acreditamos que a combinação de interesse e dedicação e oportunidade pode causar um grande impacto nas pessoas, nas organizações e no mundo.
                     </p>
-            </article>
-            <article>
+            </div>
+            <div class="problema">
                 <h2 class="header" id="hed04">Comunidade</h2>
                     <p class="paragraf" id="par04">
                         Dentro de um grupo de pessoas mais experientes e acessíveis, a curva de aprendizado ocorre de forma mais rápida, fluida e eficiente.
                     </p>
-            </article>
-            <article>
-                <h2 class="header" id="hed04">Experiencia Real</h2>
+            </div>
+            <div class="problema">
+                <h2 class="header" id="hed04">Experiência Real</h2>
                     <p class="paragraf" id="par04">
-                        Entendemos que somente as experiencias reais poderão trazer a bagagem que a teoria não o pode fazer.
+                        Entendemos que somente as experiências reais poderão trazer a bagagem que a teoria não o pode fazer.
                     </p>
-            </article>
+            </div>
+            
         </section>
-        <section>
+
+
+        <section id="img04">
             <! --tela Jornada: 6 caixas c icon--->
+            <h1 id="hed05">Sua Jornada</h1>
+            
+            <div class="jornada">
+                
+                <p id="par05">
+                    
+                    Programas de 4 meses de duração, sendo 6 horas/dia  
+                </p>
+            </div>
+            <div class="jornada">
+                
+                <p id="par05">
+                    Do Zero ao Junior Promissor em 4 meses.  
+                </p>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
         </section>
             <! --tela Objetivos: 3 caixas simples--->
 
